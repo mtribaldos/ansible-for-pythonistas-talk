@@ -1,6 +1,6 @@
-# Flux 
+# Ansible for Pythonistas
 
-An application architecture for React
+An introduction to Ansible for Python programmers
 
 ---
 
