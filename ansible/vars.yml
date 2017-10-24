@@ -1,38 +1,25 @@
 ---
-# a unix path-friendly name (IE, no spaces or special characters)
+
+# A unix path-friendly name
 project_name: django_hello
 
-# the base path to install to. You should not need to change this.
+# The base path to install to. You should not need to change this.
 install_root: /srv
 
-# the python module path to your project's wsgi file. E.g. for a directory
-# layout like this (assuming `django_hello` is the project_name and top level
-# directory name):
-# django_hello
-# ├── hello
-# │   ├── apps
-# │   ├── __init__.py
-# │   ├── settings.py
-# │   ├── urls.py
-# │   └── wsgi.py
-# ├── manage.py
-# └── requirements.txt
-# the correct wsgi_module value would be `hello.wsgi`
+# The python module path to your project's wsgi file.
 wsgi_module: hello.wsgi
 
-# any directories that need to be added to the PYTHONPATH.
+# Any directories that need to be added to the PYTHONPATH.
 pythonpath: "{{ install_root }}/{{ project_name }}/hello/apps"
 
 # the git repository URL for the project
-project_repo: git@github.com:technivore/django-hello-world.git
+project_repo: git@github.com:mtribaldos/django-hello-world.git
     
 # a private key that has access to the repository URL
 ssh_private_key: ~/.ssh/id_rsa
 
 # The value of your django project's STATIC_ROOT settings.
-# This will be the directory that django's `collectstatic` management command
-# copies static files to, and it must be an absolute path. The default value 
-# here assumes that STATIC_ROOT is set in your settings.py like so:
+# Here assumes that STATIC_ROOT is set in your settings.py like so:
 # STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'static'))
 static_root: "{{ install_root }}/{{ project_name }}/static"
 
