@@ -1,0 +1,68 @@
+---
+
+- hosts: servers
+  vars_files:
+    - vars.yml
+  gather_facts: false
+  become: yes
+
+  tasks:
+    - name: Clone project repository
+      git: 
+        repo: "{{ project_repo }}"
+        dest: "{{ install_root }}/{{ project_name }}"
+        accept_hostkey: yes
+      notify:
+        - Restart gunicorn
+
+    - name: Install Python project package requirements
+      pip: requirements={{ install_root }}/{{ project_name }}/requirements.txt
+      notify:
+        - Restart gunicorn
+
+    - name: Configure nginx
+      template: 
+        src: files/nginx.j2 
+        dest: /etc/nginx/sites-enabled/{{ project_name }}.conf
+      notify:
+        - Restart nginx
+
+    - name: Configure gunicorn 
+      template: 
+        src: files/gunicorn.j2 
+        dest: /etc/init/gunicorn.conf
+      notify:
+        - Restart gunicorn
+
+    - name: Run migrate on the application 
+      django_manage: 
+        command: migrate 
+        app_path: "{{ install_root }}/{{ project_name }}"
+        pythonpath: "{{ pythonpath }}"
+
+    - name: Run collectstatic on the application
+      django_manage: 
+        command: collectstatic 
+        app_path: "{{ install_root }}/{{ project_name }}"
+        pythonpath: "{{ pythonpath }}"
+
+    - name: Make sure nginx server is running
+      service: 
+        name: nginx 
+        state: started
+        enabled: yes
+
+    - name: Make sure gunicorn server is running
+      service: 
+        name: gunicorn 
+        state: started 
+        enabled: yes
+
+  handlers: 
+    - name: Restart nginx
+      service: name=nginx state=restarted
+
+    - name: Restart gunicorn
+      service: name=gunicorn state=restarted
+
+# vim:ft=ansible:
