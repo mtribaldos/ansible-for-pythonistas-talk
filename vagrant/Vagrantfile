@@ -22,10 +22,10 @@ Vagrant.configure(2) do |config|
       vb.memory = 2048
     end
     if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
-      dev.vm.synced_folder ".", "/vagrant", mount_options: ["dmode=700,fmode=600"]
+      dev.vm.synced_folder "./shared", "/vagrant", mount_options: ["dmode=700,fmode=600"]
       dev.vm.synced_folder "../ansible", "/ansible", mount_options: ["dmode=700,fmode=600"]
     else
-      dev.vm.synced_folder ".", "/vagrant"
+      dev.vm.synced_folder "./shared", "/vagrant"
       dev.vm.synced_folder "../ansible", "/ansible"
     end
   end
