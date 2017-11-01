@@ -13,10 +13,11 @@ wsgi_module: hello.wsgi
 pythonpath: "{{ install_root }}/{{ project_name }}/hello/apps"
 
 # the git repository URL for the project
-project_repo: git@github.com:mtribaldos/django-hello-world.git
+#project_repo: git@github.com:mtribaldos/django-hello-world.git
+project_repo: https://github.com/mtribaldos/django-hello-world.git
     
 # a private key that has access to the repository URL
-ssh_private_key: ~/.ssh/id_rsa
+#ssh_private_key: ~/.ssh/id_rsa
 
 # The value of your django project's STATIC_ROOT settings.
 # Here assumes that STATIC_ROOT is set in your settings.py like so:
@@ -26,21 +27,7 @@ static_root: "{{ install_root }}/{{ project_name }}/static"
 # the dns name or names (space separated) for your server
 server_name: django-hello.com www.django-hello.com
 
-# database setup. Note that because this playbook doesn't touch the default 
-# postgres pg_hba.conf file, we use local password-based authentication for
-# postgres and thus you need to provide a username and password, and your
-# settings.py MUST set "localhost" or "127.0.0.1" as the HOST value. For
-# example, the default settings here assume the following values in
-# settings.py:
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'HOST': 'localhost',
-#         'NAME': 'hello',
-#         'USER': 'hello',
-#         'PASSWORD': 'changeme',
-#     }
-# }
+# database setup. 
 db_name: hello
 db_user: hello
 db_password: changeme
