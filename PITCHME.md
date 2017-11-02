@@ -1,6 +1,6 @@
 # Ansible for Pythonistas
 
-![Image](img/Ansible_Logo.png)
+logo: assets/ansible-logo.png
 An introduction to Ansible for Python programmers
 
 ---
