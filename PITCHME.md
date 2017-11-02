@@ -62,6 +62,12 @@ It allows provisioning even nodes without Python. How? Python bootstrapping via 
 
 ---
 
+### Playbooks 
+
+---?code=ansible/provision.yml
+
+---
+
 ## Ad-hoc tasks
 
 - Uses the *ansible* command
