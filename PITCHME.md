@@ -60,8 +60,9 @@ It allows provisioning even nodes without Python. How? Python bootstrapping via 
 - YAML files
 - ...
 
-+++?code=ansible/provision.yml&lang=yaml
++++?code=ansible/provision.yml&lang=ansible
 
+##### This is a test
 ---
 
 ## Ad-hoc tasks
@@ -90,4 +91,3 @@ It allows provisioning even nodes without Python. How? Python bootstrapping via 
 
 ---
 
-![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
