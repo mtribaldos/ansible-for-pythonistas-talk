@@ -60,7 +60,7 @@ It allows provisioning even nodes without Python. How? Python bootstrapping via 
 - YAML files
 - ...
 
-+++?code=ansible/provision.yml&lang=YAML
++++?code=ansible/provision.yml&lang=JSON
 
 ##### This is a test
 ---
