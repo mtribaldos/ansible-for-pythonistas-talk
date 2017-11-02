@@ -1,7 +1,10 @@
 # Ansible for Pythonistas
 
-logo: assets/ansible-logo.png
-An introduction to Ansible for Python programmers
+### An introduction to Ansible for Python programmers
+
+Miguel Ángel Tribaldos
+Senior Developer
+@mtribaldos
 
 ---
 
