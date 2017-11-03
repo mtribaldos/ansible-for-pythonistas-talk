@@ -78,24 +78,28 @@ Python bootstrapping via the `raw` module:
 
 ---
 
-### Operating modes
+### WHAT, HOW & WHERE
 
-- Playbooks
-- Ad-hoc tasks
-- Roles
-
----
-
-### Playbooks 
-
-- YAML file
-- More ...
+- **Code**: playbooks
+- **Configuration**: variable files
+- **Target**: inventory
 
 ---
 
-### YAML file
+### Inventory
 
-##### Plain YAML file
+##### INI files 
+
+```ini
+[servers]
+server-[1:3]
+```
+
+---
+
+### Configuration
+
+##### YAML files
 
 +++?code=ansible/vars.yml&lang=YAML
 
@@ -104,7 +108,35 @@ Python bootstrapping via the `raw` module:
 
 ---
 
-### Provision playbook
+### Code
+
+##### YAML files
+##### Operating modes
+
+- Ad-hoc commands
+- Playbooks
+- Roles
+
+---
+
+## Ad-hoc tasks
+
+- **ansible** command
+- Useful, but... only for putting out fires!
+
+---
+
+### Playbook
+
+- YAML file
+- One or more plays...
+- ...
+
+---
+
+### Playbook
+
+#### Provision playbook
 
 +++?code=ansible/provision.yml&lang=YAML
 
@@ -121,16 +153,11 @@ Python bootstrapping via the `raw` module:
 
 ---
 
-### Deploy playbook
+### Playbook
+
+#### Deploy playbook
 
 +++?code=ansible/deploy.yml&lang=YAML
-
----
-
-## Ad-hoc tasks
-
-- **ansible** command
-- Useful, but... only for putting out fires!
 
 ---
 
@@ -145,12 +172,6 @@ Python bootstrapping via the `raw` module:
 ## Modules
 
 - ... 
-
----
-
-## Inventories
-
-- ...
 
 ---
 
