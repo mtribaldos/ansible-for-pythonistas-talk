@@ -93,6 +93,10 @@ Python bootstrapping via the `raw` module:
 
 +++?code=ansible/provision.yml&lang=YAML
 
+@[11-14](Elixir module-attributes as constants)
+@[22-28](Elixir with-statement for conciseness)
+
+
 ##### This is a test
 ---
 
