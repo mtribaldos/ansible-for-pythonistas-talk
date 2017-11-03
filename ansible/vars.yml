@@ -13,15 +13,9 @@ wsgi_module: hello.wsgi
 pythonpath: "{{ install_root }}/{{ project_name }}/hello/apps"
 
 # the git repository URL for the project
-#project_repo: git@github.com:mtribaldos/django-hello-world.git
 project_repo: https://github.com/mtribaldos/django-hello-world.git
     
-# a private key that has access to the repository URL
-#ssh_private_key: ~/.ssh/id_rsa
-
 # The value of your django project's STATIC_ROOT settings.
-# Here assumes that STATIC_ROOT is set in your settings.py like so:
-# STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'static'))
 static_root: "{{ install_root }}/{{ project_name }}/static"
 
 # the dns name or names (space separated) for your server
