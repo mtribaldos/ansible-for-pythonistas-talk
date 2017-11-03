@@ -37,6 +37,6 @@
         path=/etc/nginx/sites-enabled/default 
         state=absent
 
-- include: deploy.yml
+- import_playbook: deploy.yml
 
 # vim:ft=ansible:

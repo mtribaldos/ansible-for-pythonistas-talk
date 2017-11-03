@@ -93,11 +93,14 @@ Python bootstrapping via the `raw` module:
 
 +++?code=ansible/provision.yml&lang=YAML
 
-@[2-38](First play)
-@[40-40](Second play)
-@[2-2](First play - Target host group)
-@[3-4](First play - Variable definitions)
-@[8-38](First play - Task list)
+@[2-38](Play - First)
+@[40-40](Play - Second)
+@[2-2](Target host group)
+@[3-4](Variable definitions)
+@[8-38](Task list)
+@[21-21](Task syntax: same line parameter definitions)
+@[16-18](Task syntax: multiple line parameter definitions)
+@[28-32](Task syntax: dictionary definitions)
 
 ##### This is a test
 
