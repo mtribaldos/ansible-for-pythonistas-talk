@@ -93,11 +93,14 @@ Python bootstrapping via the `raw` module:
 
 +++?code=ansible/provision.yml&lang=YAML
 
-@[11-14](Elixir module-attributes as constants)
-@[22-28](Elixir with-statement for conciseness)
-
+@[2-38](First play)
+@[40-40](Second play)
+@[2-2](First play - Target host group)
+@[3-4](First play - Variable definitions)
+@[8-38](First play - Task list)
 
 ##### This is a test
+
 ---
 
 ## Ad-hoc tasks
