@@ -88,8 +88,23 @@ Python bootstrapping via the `raw` module:
 
 ### Playbooks 
 
-- YAML files
-- More ideas
+- YAML file
+- More ...
+
+---
+
+### YAML file
+
+##### Plain YAML file
+
++++?code=ansible/vars.yml&lang=YAML
+
+@[3-3](Key-value pair: scalar value)
+@[31-38](Key-value pair: array)
+
+---
+
+### Provision playbook
 
 +++?code=ansible/provision.yml&lang=YAML
 
@@ -103,6 +118,12 @@ Python bootstrapping via the `raw` module:
 @[21-21](Parameter syntax: same line parameter definitions)
 @[16-18](Parameter syntax: multiple line parameter definitions)
 @[28-32](Parameter syntax: dictionary definitions)
+
+---
+
+### Deploy playbook
+
++++?code=ansible/deploy.yml&lang=YAML
 
 ---
 
