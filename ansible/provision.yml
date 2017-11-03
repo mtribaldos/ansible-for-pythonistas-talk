@@ -13,7 +13,9 @@
       with_items: "{{ system_packages }}"
 
     - name: Create directory for app
-      file: path={{ install_root }}/{{ project_name }} state=directory
+      file: >
+        path={{ install_root }}/{{ project_name }}
+        state=directory
 
     - name: Make sure postgresql server is running
       service: name=postgresql state=started
@@ -31,7 +33,9 @@
       become_user: postgres
 
     - name: Remove default nginx site
-      file: path=/etc/nginx/sites-enabled/default state=absent
+      file: >
+        path=/etc/nginx/sites-enabled/default 
+        state=absent
 
 - include: deploy.yml
 
