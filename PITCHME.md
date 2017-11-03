@@ -90,7 +90,7 @@ Python bootstrapping via the `raw` module:
 
 ##### INI files 
 
-```ini
+```
 [servers]
 server-[1:3]
 ```
@@ -111,6 +111,7 @@ server-[1:3]
 ### Code
 
 ##### YAML files
+
 ##### Operating modes
 
 - Ad-hoc commands
@@ -130,7 +131,6 @@ server-[1:3]
 
 - YAML file
 - One or more plays...
-- ...
 
 ---
 
