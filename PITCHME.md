@@ -130,9 +130,11 @@ Python bootstrapping via the `raw` module:
 - Deployed in 3 VM servers
 - Deployed from a dedicated VM (*dev* + *ci*)
 
++++
+
 ### Demo App - Bootstrapping
 
-+++?code=vagrant/Vagrantfile&lang=Vagrantfile
++++?code=vagrant/Vagrantfile&lang=ruby
 
 
 ---
