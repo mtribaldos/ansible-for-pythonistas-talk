@@ -91,22 +91,26 @@ def local_info():
 
 ### Ansible
 
+#### It promises...
+
 - Extremely **simple**
 - Agentless
 - Push by default
-- Not another DSL
-
----
-
-### Ansible dependencies
-
-#### Only SSH!
-
-It allows provisioning even nodes without Python. 
+- Not need for any brand new DSL
 
 +++
 
-**How?**
+### What a managed node needs? 
+
+#### Only `python` and `python-simplejson`
+
++++
+
+### At a bare minimum, **only SSH**
+
+#### Technically, it would possible provisioning even nodes without Python
+
+### How?
 
 +++ 
 
