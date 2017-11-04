@@ -39,7 +39,7 @@ Senior Developer
 
 ---
 
-##### The pythonista approach
+##### The pythonic approach
 ### What about Fabric?
 
 - Suitable for small environments
@@ -101,7 +101,7 @@ def local_info():
 
 ### What a managed node needs? 
 
-#### Only `python` and `python-simplejson`
+##### Only `python` and `python-simplejson`
 
 +++
 
