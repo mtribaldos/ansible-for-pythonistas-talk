@@ -9,7 +9,7 @@ Senior Developer
 
 ---
 
-### What we need?
+### What do we need?
 
 - Provision infrastructure
 - Deploy application
@@ -17,7 +17,7 @@ Senior Developer
 
 ---
 
-### How we would need?
+### How do we need it?
 
 - Avoid repeating manual work
 - Infrastructure as Code
@@ -28,8 +28,7 @@ Senior Developer
 ##### The simple (and naïve?) approach
 ### Shell scripts
 
-- Not robust
-- Low quality, bad maintenance, inexistent documentation
+- Not robust, low quality, bad maintenance, inexistent documentation
 - Explicit transport mechanisms. Not standard methods
 - Very hard to achieve reusable code
 - Normally not **idempotent** tasks (what?)
@@ -42,7 +41,8 @@ Senior Developer
 ### What about Fabric?
 
 - Suitable for small environments
-- Writing infrastructure code in Python :kissing_heart: ? :sweat: ?
+- Writing infrastructure code in Python 
+:kissing_heart: :sweat:
 
 ```python
 # ~/fabfile.py
