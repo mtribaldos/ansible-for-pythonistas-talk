@@ -117,7 +117,16 @@ Python bootstrapping via the `raw` module: |
 
 ---
 
-### DEMO APP
+### Demo App - Schema
+
+- Simple Django application
+- Django + Postgres + Gunicorn + Nginx
+- Deployed in 3 VM servers
+- Deployed from a dedicated VM (*dev* + *ci*)
+
+---
+
+### Demo App - Bootstrapping
 
 ---
 
