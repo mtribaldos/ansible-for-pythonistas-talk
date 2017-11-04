@@ -130,13 +130,10 @@ Python bootstrapping via the `raw` module:
 - Deployed in 3 VM servers
 - Deployed from a dedicated VM (*dev* + *ci*)
 
----
-
 ### Demo App - Bootstrapping
 
-```Vagrantfile
++++?code=vagrant/Vagrantfile&lang=Vagrantfile
 
-```
 
 ---
 
@@ -273,7 +270,7 @@ Useful, but... only for operating manually
 #### Role definition
 
 - Created by ourselves
-- Import from Ansible Galaxy:
+- Imported from Ansible Galaxy. Ready to use it!:
 
 ```bash
 $ ansible-galaxy install username.rolename
