@@ -1,2 +1,3 @@
 
 logo: assets/ansible-logo.png
+theme-override: assets/css/PITCHME.css
