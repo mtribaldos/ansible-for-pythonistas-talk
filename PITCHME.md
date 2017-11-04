@@ -52,18 +52,19 @@ Configuration Management system
 ---
 ### Client-server CM systems
 
-#### What are the choices? *(1/2)*
+#### What are the choices? 
 
-![Puppet](assets/puppet_logo.png)
-![Chef](assets/chef_logo.png)
-![Salt](assets/salt_logo.png)
-![CFEngine](assets/cfengine_logo.png)
+![Puppet](assets/puppet_logo.png) ![Chef](assets/chef_logo.png)
+
+![Salt](assets/salt_logo.png) ![CFEngine](assets/cfengine_logo.png)
 
 ##### Model-driven orchestration model
 
 --- 
 
-### What are the choices? *(2/2)*
+### Client-server CM systems
+
+#### What are the choices? 
 
  - Complex
  - Steep learning curve
