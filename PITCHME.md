@@ -44,7 +44,6 @@ Senior Developer
 
 - Suitable for small environments
 - Writing infrastructure code in Python 
-:kissing_heart: :sweat:
 
 ```python
 # ~/fabfile.py
