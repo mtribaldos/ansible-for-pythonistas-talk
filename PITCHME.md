@@ -268,6 +268,15 @@ Useful, but... only for operating manually
   become: yes
 ```
 
+#### Role definition
+
+- Created by ourselves
+- Import from Ansible Galaxy:
+
+```bash
+$ ansible-galaxy install username.rolename
+```
+
 ---
 
 ## Modules
