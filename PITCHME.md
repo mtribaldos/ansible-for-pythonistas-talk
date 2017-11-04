@@ -25,31 +25,48 @@ Senior Developer
 
 ---
 
-##### First attempt
+##### The simple (and naïve?) approach
 ### Shell scripts
 
 - Not robust
 - Low quality, bad maintenance, inexistent documentation
 - Explicit transport mechanisms. Not standard methods
+- Very hard to achieve reusable code
 - Normally not **idempotent** tasks (what?)
 
----
-
-### Enough!
-
-We need keep **code**, reuse it, reach full automation provisioning the infrastructure
-not use-and-throw dirty scripts
-
-##### Infrastructure as code
-
-Configuration Management system
+##### They end up being use-and-throw recipes
 
 ---
 
+##### The pythonista approach
 ### What about Fabric?
 
+- Suitable for small environments
+- Writing infrastructure code in Python :kissing_heart: ? :sweat: ?
+
+```python
+# ~/fabfile.py
+
+from fabric.api import *
+
+env.hosts = ['test.example.org']
+env.user  = 'bob'
+
+def remote_info():
+    run('uname -a')
+
+def local_info():
+    local('uname -a')
+```
+
+....
 
 ---
+
+### So it seems we need a full-featured Configuration Management System...
+
+---
+
 ### Client-server CM systems
 
 #### What are the choices? 
