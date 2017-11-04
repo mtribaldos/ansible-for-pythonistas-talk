@@ -123,7 +123,7 @@ Python bootstrapping via the `raw` module:
 
 ---
 
-### Demo App - Schema
+### Demo App - Scenario
 
 - Simple web application
 - Django + Postgres + Gunicorn + Nginx
@@ -137,6 +137,8 @@ Python bootstrapping via the `raw` module:
 +++?code=vagrant/Vagrantfile&lang=ruby
 
 @[20-20](Provisioner)
+
+### Ansible bootstrapping in *dev* node
 
 +++?code=vagrant/bootstrap.sh&lang=bash
 
