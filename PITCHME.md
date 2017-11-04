@@ -136,6 +136,9 @@ Python bootstrapping via the `raw` module:
 
 +++?code=vagrant/Vagrantfile&lang=ruby
 
+@[20-20](Provisioner)
+
++++?code=vagrant/bootstrap.sh&lang=bash
 
 ---
 
