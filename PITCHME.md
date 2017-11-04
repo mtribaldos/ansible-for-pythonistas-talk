@@ -98,9 +98,6 @@ def local_info():
 - Push by default
 - Not another DSL!
 
-- *Control machine*: any UNIX system: Red Hat, Debian, CentOS, OS X, any of the BSDs... even WSL)
-- *Managed nodes*: any machine supporting SSH
-
 ---
 
 ### Ansible dependencies
@@ -109,9 +106,9 @@ def local_info():
 
 It allows provisioning even nodes without Python. 
 
-**How?** 
+**How?** |
 
-Python bootstrapping via the `raw` module:
+Python bootstrapping via the `raw` module: |
 
 ```yaml
 - name: Bootstrap a legacy python 2.4 host
