@@ -138,6 +138,8 @@ Python bootstrapping via the `raw` module:
 
 @[20-20](Provisioner)
 
++++
+
 ### Ansible bootstrapping in *dev* node
 
 +++?code=vagrant/bootstrap.sh&lang=bash
