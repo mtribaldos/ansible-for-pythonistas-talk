@@ -241,7 +241,7 @@ Useful, but... only for operating manually
 
 ---
 
-## Roles 
+### Roles 
 
 - More abstracted, more reusable code
 - More structured playbooks:
@@ -253,21 +253,22 @@ Useful, but... only for operating manually
  - defaults/
  - meta/
 
----
++++
 
-## Roles in our application
+#### In our application
 
 ```yaml
 - hosts: servers
   roles:
-     - common
-     - webservers
+     - postgres
+     - gunicorn
+     - nginx
+     - django-app
   gather_facts: false
   become: yes
-
 ```
 
--- 
+---
 
 ## Modules
 
