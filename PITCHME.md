@@ -33,7 +33,9 @@ Senior Developer
 - Very hard to achieve reusable code
 - Normally not **idempotent** tasks (what?)
 
-##### They end up being use-and-throw recipes
++++
+
+### They end up being use-and-throw recipes!
 
 ---
 
@@ -59,8 +61,6 @@ def local_info():
     local('uname -a')
 ```
 
-....
-
 ---
 
 ### So it seems we need a full-featured Configuration Management System...
@@ -79,15 +79,11 @@ def local_info():
 
 ##### Model-driven orchestration model
 
---- 
-
-### Client-server CM systems
-
-#### What are the choices? 
++++ 
 
  - Complex
  - Steep learning curve
- - Chicken-egg problem!
+ - Chicken and egg situation
 
 ---
 
@@ -96,7 +92,7 @@ def local_info():
 - Extremely **simple**
 - Agentless
 - Push by default
-- Not another DSL!
+- Not another DSL
 
 ---
 
