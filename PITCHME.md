@@ -183,7 +183,7 @@ server-[1:3]
 - **ansible** command
 
 ```bash
-$ ansible servers -m service -a "/sbin/reboot"
+$ ansible servers -a "/sbin/reboot"
 ```
  
 ```bash
