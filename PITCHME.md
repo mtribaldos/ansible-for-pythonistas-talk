@@ -54,7 +54,6 @@ Configuration Management system
 
 #### What are the choices?
 
-(Imágenes de logos) 
 ![Puppet](assets/puppet_logo.png)
 ![Chef](assets/chef_logo.png)
 ![Salt](assets/salt_logo.png)
