@@ -162,13 +162,13 @@ server-[1:3]
 +++?code=ansible/vars.yml&lang=YAML
 
 @[3-3](Key-value pair with **scalar** value)
-@[31-38](Key-value pair with **array** value)
+@[30-38](Key-value pair with **array** value)
 
 ---
 
 ### Code
 
-##### YAML files
+###### YAML files
 
 ##### Operating modes
 
@@ -181,6 +181,19 @@ server-[1:3]
 ## Ad-hoc tasks
 
 - **ansible** command
+
+```bash
+$ ansible servers -m service  -a "/sbin/reboot"
+```
+
++++
+ 
+```bash
+$ ansible servers -m service -a "name=httpd state=restarted"
+``` 
+
++++
+
 - Useful, but... only for putting out fires!
 
 ---
