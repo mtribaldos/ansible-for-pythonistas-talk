@@ -192,7 +192,9 @@ $ ansible servers -m service -a "name=httpd state=restarted"
 
 +++
 
-- Useful, but... only for putting out fires!
+Useful, but... only for operating manually
+
+![Putting out Fire](assets/putting-out-fire.jpeg)
 
 ---
 
