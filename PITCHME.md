@@ -243,9 +243,8 @@ Useful, but... only for operating manually
 
 ## Roles 
 
-- More structured playbooks
 - More abstracted, more reusable code
-- Structure:
+- More structured playbooks:
  - tasks/
  - handlers/
  - files/
@@ -255,6 +254,20 @@ Useful, but... only for operating manually
  - meta/
 
 ---
+
+## Roles in our application
+
+```yaml
+- hosts: servers
+  roles:
+     - common
+     - webservers
+  gather_facts: false
+  become: yes
+
+```
+
+-- 
 
 ## Modules
 
