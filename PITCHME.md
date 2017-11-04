@@ -219,14 +219,14 @@ Useful, but... only for operating manually
 
 @[2-2](Target host group)
 @[3-4](Variable definitions)
-@[8-38](Task list)
+@[8-33](Task list)
 @[9-13](Task)
 @[9-9](Task name)
 @[10-12](Task command: use `apt` module)
 @[13-13](Task loop: iterate over array elements)
-@[21-21](Parameter syntax: same line parameter definitions)
-@[16-18](Parameter syntax: multiple line parameter definitions)
-@[28-32](Parameter syntax: dictionary definitions)
+@[16-16](Module parameter syntax: simple line)
+@[31-33](Module parameter syntax: multiple line)
+@[23-27](Module parameter syntax: dictionary)
 
 ---
 
@@ -236,8 +236,8 @@ Useful, but... only for operating manually
 
 +++?code=ansible/deploy.yml&lang=YAML
 
-@[60-65](Handlers)
-@[26-27](A handler trigger)
+@[66-71](Handlers)
+@[32-33](A handler trigger)
 
 ---
 
