@@ -54,9 +54,11 @@ Configuration Management system
 
 #### What are the choices? 
 
-![Puppet](assets/puppet_logo.png) ![Chef](assets/chef_logo.png)
+![Puppet](assets/puppet_logo.png)
+![Chef](assets/chef_logo.png)
 
-![Salt](assets/salt_logo.png) ![CFEngine](assets/cfengine_logo.png)
+![Salt](assets/salt_logo.png) 
+![CFEngine](assets/cfengine_logo.png)
 
 ##### Model-driven orchestration model
 
