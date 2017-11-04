@@ -133,13 +133,9 @@ Python bootstrapping via the `raw` module:
 
 ### Demo App - Bootstrapping
 
-+++?code=vagrant/Vagrantfile&lang=ruby
-
-@[20-20](Provisioner)
-
-+++
-
-### Ansible bootstrapping in *dev* node
+```ruby
+dev.vm.provision :shell, path: "bootstrap.sh"
+```
 
 +++?code=vagrant/bootstrap.sh&lang=bash
 
