@@ -85,6 +85,8 @@ def local_info():
  - Steep learning curve
  - Chicken and egg situation
 
+![Chicken-Egg](assets/chicken-or-egg.jpg)
+
 ---
 
 ### Ansible
