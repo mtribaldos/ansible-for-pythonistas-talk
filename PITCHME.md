@@ -1,6 +1,7 @@
 # Ansible for Pythonistas
 
-#### An introduction to Ansible for Python programmers
+#### Python Valencia Meetup
+#### November 2017
 
 Miguel Ángel Tribaldos  
 Senior Developer  
@@ -16,35 +17,57 @@ Senior Developer
 
 ---
 
+### How we would need?
+
+- Avoid repeating manual work
+- Infrastructure as Code
+- Ability to reset and reconfigure CI infrastructure
+
+---
+
+##### First attempt
 ### Shell scripts
 
-- Not idempotent
 - Not robust
-- ...
+- Low quality, bad maintenance, inexistent documentation
+- Explicit transport mechanisms. Not standard methods
+- Normally not **idempotent** tasks (what?)
 
 ---
 
-### No!
+### Enough!
 
-We need keep **code**, not use-and-throw dirty scripts
+We need keep **code**, reuse it, reach full automation provisioning the infrastructure
+not use-and-throw dirty scripts
 
-##### infrastructure as code
+##### Infrastructure as code
+
+Configuration Management system
 
 ---
 
-### Alternatives
+### What about Fabric?
+
+
+---
+### Client-server CM systems
+
+#### What are the choices?
+
+(Imágenes de logos) 
 
 - Model-driven orchestration model
   - Puppet
   - Chef
   - Salt
+  - CFEngine
 
 --- 
 
 ### Alternatives
 
  - Complex
- - ...
+ - Steep learning curve
  - Chicken-egg problem!
 
 ---
@@ -78,6 +101,10 @@ Python bootstrapping via the `raw` module:
 
 ---
 
+### DEMO APP
+
+---
+
 ### WHAT, HOW & WHERE
 
 - **Code**: playbooks
@@ -103,8 +130,8 @@ server-[1:3]
 
 +++?code=ansible/vars.yml&lang=YAML
 
-@[3-3](Key-value pair: scalar value)
-@[31-38](Key-value pair: array)
+@[3-3](Key-value pair with **scalar** value)
+@[31-38](Key-value pair with **array** value)
 
 ---
 
