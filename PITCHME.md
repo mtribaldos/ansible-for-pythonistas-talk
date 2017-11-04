@@ -106,9 +106,13 @@ def local_info():
 
 It allows provisioning even nodes without Python. 
 
-**How?** |
++++
 
-Python bootstrapping via the `raw` module: |
+**How?**
+
++++ 
+
+Python bootstrapping via the `raw` module: 
 
 ```yaml
 - name: Bootstrap a legacy python 2.4 host
