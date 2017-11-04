@@ -125,7 +125,7 @@ Python bootstrapping via the `raw` module:
 
 ### Demo App - Schema
 
-- Simple Django application
+- Simple web application
 - Django + Postgres + Gunicorn + Nginx
 - Deployed in 3 VM servers
 - Deployed from a dedicated VM (*dev* + *ci*)
@@ -133,6 +133,10 @@ Python bootstrapping via the `raw` module:
 ---
 
 ### Demo App - Bootstrapping
+
+```Vagrantfile
+
+```
 
 ---
 
@@ -147,6 +151,8 @@ Python bootstrapping via the `raw` module:
 ### Inventory
 
 ##### INI files 
+
+#### In our application
 
 ```
 [servers]
@@ -230,13 +236,23 @@ Useful, but... only for operating manually
 
 +++?code=ansible/deploy.yml&lang=YAML
 
+@[60-65](Handlers)
+@[26-27](A handler trigger)
+
 ---
 
 ## Roles 
 
 - More structured playbooks
 - More abstracted, more reusable code
-- ...
+- Structure:
+ - tasks/
+ - handlers/
+ - files/
+ - templates/
+ - vars/
+ - defaults/
+ - meta/
 
 ---
 
