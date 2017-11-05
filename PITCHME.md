@@ -13,7 +13,9 @@ Senior Developer
 
 ---
 
-### What do we need?
+### I've just coded my app. Now what?
+
+## Shipt it!
 
 - Provision infrastructure
 - Deploy application
@@ -102,7 +104,7 @@ def local_info():
 - Extremely **simple**
 - Agentless
 - Push by default
-- Not need for any brand new DSL
+- Not need for more DSLs
 
 +++
 
