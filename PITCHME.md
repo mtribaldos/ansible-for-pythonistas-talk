@@ -20,8 +20,9 @@ Senior Developer
 ### How do we need it?
 
 - Avoid repeating manual work
-- Infrastructure as Code
 - Ability to reset and reconfigure CI infrastructure
+
+#### Infrastructure as Code
 
 ---
 
@@ -29,9 +30,9 @@ Senior Developer
 ### Shell scripts
 
 - Not robust, low quality, bad maintenance, inexistent documentation
-- Explicit transport mechanisms. Not standard methods
-- Very hard to achieve reusable code
-- Normally not **idempotent** tasks (what?)
+- Explicit transport mechanisms. Non-standard methods
+- Hard to achieve reusable code
+- Normally not **idempotent** commands (:+1:)
 
 +++
 
@@ -283,10 +284,5 @@ Useful, but... only for operating manually
 $ ansible-galaxy install username.rolename
 ```
 
----
-
-## Modules
-
-- ... 
 
 
