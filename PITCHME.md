@@ -1,8 +1,9 @@
 # Ansible for Pythonistas
 
 #### Python Valencia Meetup
-#### November 2017
+##### November 2017
 
+<!-- .slide: style="text-align: left;"> -->
 Miguel Ángel Tribaldos  
 Senior Developer  
 @mtribaldos
@@ -21,6 +22,8 @@ Senior Developer
 
 - Avoid repeating manual work
 - Ability to reset and reconfigure CI infrastructure
+
++++
 
 #### Infrastructure as Code
 
@@ -102,7 +105,7 @@ def local_info():
 
 ### What a managed node needs? 
 
-##### Only `python` and `python-simplejson`
+##### Only `python`
 
 +++
 
@@ -138,7 +141,7 @@ Python bootstrapping via the `raw` module:
 dev.vm.provision :shell, path: "bootstrap.sh"
 dev.vm.provision :shell,
       inline: 'PYTHONUNBUFFERED=1 ansible-playbook \
-         /ansible/provision.yml -i /ansible/hosts'
+         /ansible/provision.yml -i /ansible/hosts -l server-1'
 ```
 
 +++?code=vagrant/bootstrap.sh&lang=bash
