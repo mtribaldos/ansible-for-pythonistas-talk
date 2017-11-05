@@ -3,7 +3,7 @@
 #### Python Valencia Meetup
 ##### November 2017
 
-<!-- .slide: style="text-align: left;"> -->
+<!-- .paragraph: style="text-align: left;"> -->
 Miguel Ángel Tribaldos  
 Senior Developer  
 @mtribaldos
