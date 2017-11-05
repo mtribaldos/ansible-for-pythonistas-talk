@@ -155,6 +155,8 @@ dev.vm.provision :shell, path: "provision-servers.sh",
 
 +++?code=vagrant/bootstrap.sh&lang=bash
 
+#### bootstrap.sh
+
 ---
 
 ### WHAT, HOW & WHERE
@@ -255,6 +257,12 @@ Useful, but... only for operating manually
 
 @[66-71](Handlers)
 @[32-33](A handler trigger)
+
++++
+
+#### How to start-up the provisioning
+
++++?code=vagrant/provision-servers.sh&lang=bash
 
 ---
 
