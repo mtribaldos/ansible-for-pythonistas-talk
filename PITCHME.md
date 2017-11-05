@@ -260,7 +260,7 @@ Useful, but... only for operating manually
 
 +++
 
-#### How to start-up the provisioning
+#### Let's ship the application
 
 ```bash
 $ ansible-playbook provision.yml -i hosts
