@@ -4,9 +4,11 @@
 ##### November 2017
 
 <div align="left">
+<small>
 Miguel Ángel Tribaldos  
 Senior Developer  
 @mtribaldos
+</small>
 </div>
 
 ---
