@@ -300,7 +300,7 @@ $ ansible-playbook provision.yml -i hosts
 #### Role definitions
 
 - Created by ourselves, or
-- Imported from Ansible Galaxy. Ready to use:
+- Imported from Ansible Galaxy:
 
 ```bash
 $ ansible-galaxy install username.rolename
