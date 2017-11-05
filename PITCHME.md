@@ -18,15 +18,16 @@ Senior Developer
 ## Ship it!
 
 - Provision infrastructure
-- Deploy application
 - Manage configuration
+- Deploy application
 
 ---
 
-### How do we need it?
+### Any advice?
 
 - Avoid repeating manual work
-- Ability to reset and reconfigure CI infrastructure
+- Ability to reset and reconfigure infrastructure
+- Visibility
 
 +++
 
@@ -40,7 +41,7 @@ Senior Developer
 - Not robust, low quality, bad maintenance, inexistent documentation
 - Explicit transport mechanisms. Non-standard methods
 - Hard to achieve reusable code
-- Normally not **idempotent** commands (:+1:)
+- Normally not **idempotent** commands
 
 +++
 
@@ -94,6 +95,10 @@ def local_info():
  - Chicken and egg situation
 
 ![Chicken-Egg](assets/chicken-or-egg.jpg)
+
+---
+
+### So any other option?
 
 ---
 
