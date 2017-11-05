@@ -284,11 +284,22 @@ Useful, but... only for operating manually
 #### Role definition
 
 - Created by ourselves
-- Imported from Ansible Galaxy. Ready to use it!:
+- Imported from Ansible Galaxy. Ready to use:
 
 ```bash
 $ ansible-galaxy install username.rolename
 ```
 
+---
 
+### Extending Ansible
+
+---
+
+### Conclusions
+
+---
+
+### Ship that brilliant Python code you've just coded
+## and do it well!
 
