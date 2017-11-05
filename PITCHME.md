@@ -3,7 +3,7 @@
 #### Python Valencia Meetup
 ##### November 2017
 
-<!-- .p: style="text-align: left;"> -->
+<span style="font-family: Helvetica Neue; font-weight: bold; color:#ffffff"><span color:##e49436">Git</span>Pitch</span>
 Miguel Ángel Tribaldos  
 Senior Developer  
 @mtribaldos
