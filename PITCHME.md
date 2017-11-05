@@ -282,7 +282,7 @@ $ ansible-playbook provision.yml -i hosts
 
 +++
 
-#### In our application
+#### Our app provisioning refactored in roles
 
 ```yaml
 - hosts: servers
@@ -297,9 +297,9 @@ $ ansible-playbook provision.yml -i hosts
 
 +++
 
-#### Role definition
+#### Role definitions
 
-- Created by ourselves
+- Created by ourselves, or
 - Imported from Ansible Galaxy. Ready to use:
 
 ```bash
