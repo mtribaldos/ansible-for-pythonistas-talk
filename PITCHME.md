@@ -15,7 +15,7 @@ Senior Developer
 
 ### I've just coded my app. Now what?
 
-## Shipt it!
+## Ship it!
 
 - Provision infrastructure
 - Deploy application
