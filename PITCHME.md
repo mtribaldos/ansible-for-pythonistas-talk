@@ -262,7 +262,9 @@ Useful, but... only for operating manually
 
 #### How to start-up the provisioning
 
-+++?code=vagrant/provision-servers.sh&lang=bash
+```bash
+$ ansible-playbook provision.yml -i hosts
+```
 
 ---
 
