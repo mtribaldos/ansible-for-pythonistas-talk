@@ -149,9 +149,8 @@ Python bootstrapping via the `raw` module:
 
 ```ruby
 dev.vm.provision :shell, path: "bootstrap.sh"
-dev.vm.provision :shell,
-      inline: 'PYTHONUNBUFFERED=1 ansible-playbook \
-         /ansible/provision.yml -i /ansible/hosts -l server-1'
+dev.vm.provision :shell, path: "provision-servers.sh",
+  privileged: false
 ```
 
 +++?code=vagrant/bootstrap.sh&lang=bash
