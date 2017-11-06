@@ -299,15 +299,6 @@ $ ansible-playbook provision.yml -i hosts
     ├── defaults/
     └── meta/
 ```
-
- - tasks/
- - handlers/
- - files/
- - templates/
- - vars/
- - defaults/
- - meta/
-
 +++
 
 #### Our app provisioning refactored in roles
