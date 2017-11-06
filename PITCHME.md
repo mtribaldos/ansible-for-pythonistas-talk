@@ -73,7 +73,8 @@ def local_info():
 
 ---
 
-### So it seems we need a full-featured **Configuration Management System**
+### So it seems we need a full-featured 
+## Configuration Management System
 
 ---
 
