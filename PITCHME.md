@@ -288,6 +288,20 @@ $ ansible-playbook provision.yml -i hosts
 
 - More abstracted, more reusable code
 - More structured playbooks:
+
+```
+my_role
+├── my_app
+│   └── content
+│       ├── content.ex
+│       └── post.ex
+└── my_app_web
+    ├── channels
+    ├── controllers
+    ├── templates
+    └── views
+```
+
  - tasks/
  - handlers/
  - files/
