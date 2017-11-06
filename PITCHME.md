@@ -4,11 +4,11 @@
 ##### November 2017
 
 <div align="left" font-family="Courier New">
-<small>
+
 Miguel Ángel Tribaldos  
 Senior Developer  
 @mtribaldos
-</small>
+
 </div>
 
 ---
