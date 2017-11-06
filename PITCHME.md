@@ -112,7 +112,6 @@ def local_info():
 - Easy to read
 - Agentless
 - Push by default
-- Not need for more DSLs
 
 +++
 
