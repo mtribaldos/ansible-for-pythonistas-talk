@@ -290,14 +290,14 @@ $ ansible-playbook provision.yml -i hosts
 - More structured playbooks:
 
 ```
- ── my_role
-    ├── tasks
-    ├── handlers
-    ├── files
-    ├── templates
-    ├── vars
-    ├── defaults
-    └── meta
+ ── my_role/
+    ├── tasks/
+    ├── handlers/
+    ├── files/
+    ├── templates/
+    ├── vars/
+    ├── defaults/
+    └── meta/
 ```
 
  - tasks/
