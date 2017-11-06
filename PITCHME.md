@@ -128,7 +128,7 @@ def local_info():
 +++
 
 #### What a managed node needs? 
-### Only *python*
+### Only Python and SSH
 
 +++
 
