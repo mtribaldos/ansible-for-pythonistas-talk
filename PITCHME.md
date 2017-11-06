@@ -3,12 +3,12 @@
 #### Python Valencia Meetup
 ##### November 2017
 
-<div align="left" font-family="Courier New">
-
+<div align="left">
+<small>
 Miguel Ángel Tribaldos  
 Senior Developer  
 @mtribaldos
-
+</small>
 </div>
 
 ---
@@ -23,7 +23,7 @@ Senior Developer
 
 ---
 
-### Any advice?
+### Is there a better way than doing by hand?
 
 - Avoid repeating manual work
 - Ability to reset and reconfigure infrastructure
@@ -35,7 +35,7 @@ Senior Developer
 
 ---
 
-##### The simple (and naïve?) approach
+##### The simple approach
 ### Shell scripts
 
 - Not robust, low quality, bad maintenance, inexistent documentation
@@ -52,8 +52,9 @@ Senior Developer
 ##### The pythonic approach
 ### What about Fabric?
 
+- Writing infrastructure code in Python
+- Viable for deployment, not for configuration managing
 - Suitable for small environments
-- Writing infrastructure code in Python 
 
 ```python
 # ~/fabfile.py
@@ -72,13 +73,13 @@ def local_info():
 
 ---
 
-### So it seems we need a full-featured Configuration Management System...
+### So it seems we need a full-featured **Configuration Management System**
 
 ---
 
-### Client-server CM systems
+### Client-server CMs
 
-#### What are the choices? 
+#### What are the popular choices? 
 
 ![Puppet](assets/puppet_logo.png)
 ![Chef](assets/chef_logo.png)
@@ -102,24 +103,37 @@ def local_info():
 
 ---
 
-## Ansible
+# Ansible
 
 #### It promises...
 
 - Extremely **simple**
+- Easy to read
 - Agentless
 - Push by default
 - Not need for more DSLs
 
 +++
 
-### What a managed node needs? 
-
-##### Only `python`
+#### "Simple things should be simple, complex things should be possible"
+###### Alan Kay
 
 +++
 
-### At a bare minimum, **only SSH**
+### Ansible more features
+
+- Idempotent Built-in modules
+- Very thin layer of Abstraction
+
++++
+
+### What a managed node needs? 
+
+##### Only *python*
+
++++
+
+### At a bare minimum, only SSH
 
 #### Technically, it would possible provisioning even nodes without Python
 
