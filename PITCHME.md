@@ -257,7 +257,7 @@ Useful, but... only for operating manually
 @[10-12](Task command: use `apt` module)
 @[13-13](Task loop: iterate over array elements)
 @[16-16](Module parameter syntax: simple line)
-@[31-33](Module parameter syntax: multiple line)
+@[31-33](Module parameter syntax: folded line)
 @[23-27](Module parameter syntax: dictionary)
 
 ---
