@@ -3,7 +3,7 @@
 #### Python Valencia Meetup
 ##### November 2017
 
-<div align="left">
+<div align="left" font-weight="lighter">
 <small>
 Miguel Ángel Tribaldos  
 Senior Developer  
