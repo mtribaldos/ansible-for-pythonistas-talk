@@ -53,7 +53,7 @@ Senior Developer
 ### What about Fabric?
 
 - Writing infrastructure code in Python
-- Viable for deployment, not for configuration managing
+- Fine for deployment tool, not for CM
 - Suitable for small environments
 
 ```python
