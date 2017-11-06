@@ -238,8 +238,11 @@ Useful, but... only for operating manually
 
 ### Playbook
 
-- YAML file
-- One or more plays...
+- Configuration Management script in Ansible
+- YAML format
+- One or more plays. Every **play** is a unit contains:
+ - A set of *hosts* to configure
+ - A list of *tasks* to be executed
 
 ---
 
@@ -255,7 +258,7 @@ Useful, but... only for operating manually
 @[9-13](Task)
 @[9-9](Task name)
 @[10-12](Task command: use `apt` module)
-@[13-13](Task loop: iterate over array elements)
+@[13-13](Task loop: iterate over list elements)
 @[16-16](Module parameter syntax: simple line)
 @[31-33](Module parameter syntax: folded line)
 @[23-27](Module parameter syntax: dictionary)
