@@ -232,9 +232,10 @@ Useful, but... only for operating manually
 
 - Configuration Management script in Ansible
 - YAML format
-- One or more plays. Every **play** is a unit contains:
- - *WHERE*: A set of *hosts* to configure
- - *WHAT*: A list of *tasks* to be executed
+- One or more plays.
+- Every **play**:
+ - *WHERE*: A set of *hosts* 
+ - *WHAT*: A list of *tasks*
  - *HOW*: Optionally, a list of vars or varfiles
 
 ---
