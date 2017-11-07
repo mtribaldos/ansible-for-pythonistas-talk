@@ -15,7 +15,7 @@ Senior Developer
 
 ### I've just coded my app. Now what?
 
-## Ship it!
+## Let's ship it!
 
 - Provision infrastructure
 - Manage configuration
@@ -23,7 +23,7 @@ Senior Developer
 
 ---
 
-### Any advice?
+### Is there a better way than doing by hand?
 
 - Avoid repeating manual work
 - Ability to reset and reconfigure infrastructure
@@ -35,13 +35,12 @@ Senior Developer
 
 ---
 
-##### The simple (and naïve?) approach
+##### The simple approach
 ### Shell scripts
 
 - Not robust, low quality, bad maintenance, inexistent documentation
 - Explicit transport mechanisms. Non-standard methods
 - Hard to achieve reusable code
-- Normally not **idempotent** commands
 
 +++
 
@@ -52,8 +51,9 @@ Senior Developer
 ##### The pythonic approach
 ### What about Fabric?
 
+- Writing infrastructure code in Python
+- Fine for deployment tool, not for CM
 - Suitable for small environments
-- Writing infrastructure code in Python 
 
 ```python
 # ~/fabfile.py
@@ -72,13 +72,14 @@ def local_info():
 
 ---
 
-### So it seems we need a full-featured Configuration Management System...
+### So it seems we need a full-featured 
+## Configuration Management System
 
 ---
 
-### Client-server CM systems
+### Client-server CM tools
 
-#### What are the choices? 
+#### What are the popular choices? 
 
 ![Puppet](assets/puppet_logo.png)
 ![Chef](assets/chef_logo.png)
@@ -102,24 +103,30 @@ def local_info():
 
 ---
 
-## Ansible
+# Ansible
 
 #### It promises...
 
 - Extremely **simple**
+- Easy to read
 - Agentless
 - Push by default
-- Not need for more DSLs
 
 +++
 
-### What a managed node needs? 
+### Ansible more features
 
-##### Only `python`
+- Very thin layer of Abstraction
+- **Idempotent** Built-in modules
 
 +++
 
-### At a bare minimum, **only SSH**
+#### What a managed node needs? 
+### Only Python and SSH
+
++++
+
+### At a bare minimum, only SSH
 
 #### Technically, it would possible provisioning even nodes without Python
 
@@ -175,7 +182,7 @@ dev.vm.provision :shell, path: "provision-servers.sh",
 
 ```
 [servers]
-server-[1:3]
+server-[1:4]
 ```
 
 ---
@@ -187,7 +194,7 @@ server-[1:3]
 +++?code=ansible/vars.yml&lang=YAML
 
 @[3-3](Key-value pair with **scalar** value)
-@[30-38](Key-value pair with **array** value)
+@[30-38](Key-value pair with **list** value)
 
 ---
 
@@ -206,15 +213,13 @@ server-[1:3]
 ## Ad-hoc tasks
 
 - **ansible** command
-
-```bash
-$ ansible servers -a "/sbin/reboot"
-```
  
 ```bash
 $ ansible servers -m service -a "name=httpd state=restarted"
 ``` 
-
+```bash
+$ ansible servers -a "/sbin/reboot"
+```
 +++
 
 Useful, but... only for operating manually
@@ -225,8 +230,13 @@ Useful, but... only for operating manually
 
 ### Playbook
 
-- YAML file
-- One or more plays...
+- Configuration Management script in Ansible
+- YAML format
+- One or more plays.
+- Every **play**:
+ - *WHERE*: set of *hosts* 
+ - *WHAT*: list of *tasks*
+ - *HOW*: list of vars / varfiles
 
 ---
 
@@ -242,9 +252,9 @@ Useful, but... only for operating manually
 @[9-13](Task)
 @[9-9](Task name)
 @[10-12](Task command: use `apt` module)
-@[13-13](Task loop: iterate over array elements)
+@[13-13](Task loop: iterate over list elements)
 @[16-16](Module parameter syntax: simple line)
-@[31-33](Module parameter syntax: multiple line)
+@[31-33](Module parameter syntax: folded line)
 @[23-27](Module parameter syntax: dictionary)
 
 ---
@@ -272,14 +282,17 @@ $ ansible-playbook provision.yml -i hosts
 
 - More abstracted, more reusable code
 - More structured playbooks:
- - tasks/
- - handlers/
- - files/
- - templates/
- - vars/
- - defaults/
- - meta/
 
+```
+ ── my_role/
+    ├── tasks/
+    ├── handlers/
+    ├── files/
+    ├── templates/
+    ├── vars/
+    ├── defaults/
+    └── meta/
+```
 +++
 
 #### Our app provisioning refactored in roles
@@ -310,12 +323,26 @@ $ ansible-galaxy install username.rolename
 
 ### Extending Ansible
 
+- Modules
+- Plugins:
+ - Filtering
+ - Lookup
+ - Connection
+ - Action
+ - *much more...*
+
 ---
 
 ### Conclusions
 
----
 
-### Ship that brilliant Python code you've just coded
-## and do it well!
+##### "Simple things should be simple, complex things should be possible"
+###### Alan Kay
+
+<div align="center">
+<small> 
+@mtribaldos
+</small>
+</div>
+
 
