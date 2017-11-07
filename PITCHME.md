@@ -329,6 +329,14 @@ $ ansible-galaxy install username.rolename
 
 ### Extending Ansible
 
+- Modules
+- Plugins:
+ - Filtering
+ - Lookup
+ - Connection
+ - Action
+ - ...
+
 ---
 
 ### Conclusions
