@@ -219,15 +219,13 @@ server-[1:3]
 ## Ad-hoc tasks
 
 - **ansible** command
-
-```bash
-$ ansible servers -a "/sbin/reboot"
-```
  
 ```bash
 $ ansible servers -m service -a "name=httpd state=restarted"
 ``` 
-
+```bash
+$ ansible servers -a "/sbin/reboot"
+```
 +++
 
 Useful, but... only for operating manually
