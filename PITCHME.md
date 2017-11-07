@@ -41,7 +41,6 @@ Senior Developer
 - Not robust, low quality, bad maintenance, inexistent documentation
 - Explicit transport mechanisms. Non-standard methods
 - Hard to achieve reusable code
-- Normally not **idempotent** commands
 
 +++
 
@@ -122,7 +121,7 @@ def local_info():
 
 ### Ansible more features
 
-- Idempotent Built-in modules
+- **Idempotent** Built-in modules
 - Very thin layer of Abstraction
 
 +++
