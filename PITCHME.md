@@ -340,8 +340,7 @@ $ ansible-galaxy install username.rolename
 ###### Alan Kay
 
 <div align="center">
-<small>
-Miguel Ángel Tribaldos  
+<small> 
 @mtribaldos
 </small>
 </div>
