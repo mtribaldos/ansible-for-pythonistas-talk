@@ -116,8 +116,8 @@ def local_info():
 
 ### Ansible more features
 
-- **Idempotent** Built-in modules
 - Very thin layer of Abstraction
+- **Idempotent** Built-in modules
 
 +++
 
