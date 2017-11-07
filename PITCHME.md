@@ -270,7 +270,7 @@ Useful, but... only for operating manually
 
 +++
 
-#### Let's ship the application
+#### Provision servers, deploying the app
 
 ```bash
 $ ansible-playbook provision.yml -i hosts
