@@ -114,11 +114,6 @@ def local_info():
 
 +++
 
-#### "Simple things should be simple, complex things should be possible"
-###### Alan Kay
-
-+++
-
 ### Ansible more features
 
 - **Idempotent** Built-in modules
@@ -338,6 +333,12 @@ $ ansible-galaxy install username.rolename
 ---
 
 ### Conclusions
+
+
+##### "Simple things should be simple, complex things should be possible"
+####### Alan Kay
+
++++
 
 ---
 
