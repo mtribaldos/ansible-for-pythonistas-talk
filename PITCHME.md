@@ -38,7 +38,7 @@ Senior Developer
 ##### The simple approach
 ### Shell scripts
 
-- Not robust, low quality, bad maintenance, inexistent documentation
+- Not robust, bad maintenance, inexistent documentation
 - Explicit transport mechanisms. Non-standard methods
 - Hard to achieve reusable code
 
@@ -333,11 +333,14 @@ $ ansible-galaxy install username.rolename
 
 ---
 
+##### "Simple things should be simple, complex things should be possible"
+###### Alan Kay
+
+---
+
 ### Conclusions
 
 
-##### "Simple things should be simple, complex things should be possible"
-###### Alan Kay
 
 <div align="center">
 <small> 
