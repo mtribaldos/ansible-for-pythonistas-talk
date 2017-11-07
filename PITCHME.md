@@ -15,7 +15,7 @@ Senior Developer
 
 ### I've just coded my app. Now what?
 
-## Let's ship it!
+## Let's ship it! But...
 
 - Provision infrastructure
 - Manage configuration
@@ -338,7 +338,10 @@ $ ansible-galaxy install username.rolename
 
 ---
 
-### Conclusions
+- Perfect balance between simplicity and power
+- Better aligned to winning technologies like Docker
+
+## Now do we have the perfect tool. Let's ship it, then!
 
 
 
