@@ -182,7 +182,7 @@ dev.vm.provision :shell, path: "provision-servers.sh",
 
 ```
 [servers]
-server-[1:3]
+server-[1:9]
 ```
 
 ---
