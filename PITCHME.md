@@ -344,7 +344,8 @@ $ ansible-galaxy install username.rolename
 - Perfect balance between simplicity and power
 - Better aligned to winning technologies like Docker
 
-#### Let's ship it!
+
+### Let's ship it!
 
 
 
