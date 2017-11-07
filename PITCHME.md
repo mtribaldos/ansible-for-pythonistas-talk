@@ -339,8 +339,11 @@ $ ansible-galaxy install username.rolename
 ##### "Simple things should be simple, complex things should be possible"
 ###### Alan Kay
 
-Miguel Ángel Tribaldos
-
+<div align="center">
+<small>
+Miguel Ángel Tribaldos  
 @mtribaldos
+</small>
+</div>
 
 
