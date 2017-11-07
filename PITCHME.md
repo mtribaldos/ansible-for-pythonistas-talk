@@ -338,10 +338,13 @@ $ ansible-galaxy install username.rolename
 
 ---
 
+### Summary
+
+- Easy starting point for a Python programmer
 - Perfect balance between simplicity and power
 - Better aligned to winning technologies like Docker
 
-## Now do we have the perfect tool. Let's ship it, then!
+#### Let's ship it!
 
 
 
