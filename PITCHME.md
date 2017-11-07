@@ -234,9 +234,9 @@ Useful, but... only for operating manually
 - YAML format
 - One or more plays.
 - Every **play**:
- - *WHERE*: A set of *hosts* 
- - *WHAT*: A list of *tasks*
- - *HOW*: Optionally, a list of vars or varfiles
+ - *WHERE*: set of *hosts* 
+ - *WHAT*: list of *tasks*
+ - *HOW*: list of vars / varfiles
 
 ---
 
