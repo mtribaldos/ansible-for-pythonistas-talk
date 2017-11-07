@@ -15,7 +15,7 @@ Senior Developer
 
 ### I've just coded my app. Now what?
 
-## Ship it!
+## Let's ship it!
 
 - Provision infrastructure
 - Manage configuration
@@ -78,7 +78,7 @@ def local_info():
 
 ---
 
-### Client-server CMs
+### Client-server CM tools
 
 #### What are the popular choices? 
 
@@ -200,7 +200,7 @@ server-[1:3]
 +++?code=ansible/vars.yml&lang=YAML
 
 @[3-3](Key-value pair with **scalar** value)
-@[30-38](Key-value pair with **array** value)
+@[30-38](Key-value pair with **list** value)
 
 ---
 
@@ -241,8 +241,9 @@ Useful, but... only for operating manually
 - Configuration Management script in Ansible
 - YAML format
 - One or more plays. Every **play** is a unit contains:
- - A set of *hosts* to configure
- - A list of *tasks* to be executed
+ - *WHERE*: A set of *hosts* to configure
+ - *WHAT*: A list of *tasks* to be executed
+ - *HOW*: Optionally, a list of vars or varfiles
 
 ---
 
