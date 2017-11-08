@@ -1,0 +1,16 @@
+
+- Presentación
+
+- ¿Qué es Ansible?
+- Diferencias con otros sistemas similares: mecanismo push, agentless, sin ningún requerimiento
+- Qué y dónde: playbooks e inventario
+- Módulos
+- Inventario
+- Hechos
+- Modos de operación:
+  1. Tareas ad-hoc
+  2. Playbook
+  3. Roles
+  - ¿Se puede imitar el comportamiento pull? Se puede!
+
+- 
