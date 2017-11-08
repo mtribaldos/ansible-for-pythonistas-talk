@@ -38,7 +38,7 @@ Senior Developer
 ##### The simple approach
 ### Shell scripts
 
-- Not robust, bad maintenance, inexistent documentation
+- Not robust, bad maintenance
 - Explicit transport mechanisms. Non-standard methods
 - Hard to achieve reusable code
 
