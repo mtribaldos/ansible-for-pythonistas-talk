@@ -109,7 +109,7 @@ def local_info():
 
 #### It promises...
 
-- Extremely **simple**
+- Extremely simple
 - Easy to read
 - Agentless
 - Push by default
