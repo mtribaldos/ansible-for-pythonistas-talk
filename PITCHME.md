@@ -231,7 +231,6 @@ Useful, but... only for operating manually
 ### Playbook
 
 - Configuration Management script in Ansible
-- YAML format
 - One or more plays.
 - Every **play**:
  - *WHERE*: set of *hosts* 
