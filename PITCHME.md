@@ -31,7 +31,7 @@ Senior Developer
 
 +++
 
-## Infrastructure as Code
+## Configuration as Code
 
 ---
 
