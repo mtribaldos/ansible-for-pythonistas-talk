@@ -44,7 +44,7 @@ Senior Developer
 
 +++
 
-### They end up being use-and-throw artifacts!
+### They end up being use and throw artifacts!
 
 ---
 
