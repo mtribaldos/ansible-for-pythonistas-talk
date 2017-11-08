@@ -15,7 +15,7 @@ Senior Developer
 
 ### I've just coded my app. Now what?
 
-## Let's ship it! But...
+## Time to ship it! But...
 
 - Provision infrastructure
 - Manage configuration
