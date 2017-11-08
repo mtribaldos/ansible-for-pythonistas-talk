@@ -1,1 +1,0 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/mtribaldos/python-talk/vagrant/shared","disabled":false},"/ansible":{"guestpath":"/ansible","hostpath":"/home/mtribaldos/python-talk/ansible","disabled":false}}}
