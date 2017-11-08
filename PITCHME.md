@@ -350,6 +350,7 @@ $ ansible-galaxy install username.rolename
 <div align="center">
 <small> 
 @mtribaldos
+    
 github.com/mtribaldos/python-talk
 </small>
 </div>
