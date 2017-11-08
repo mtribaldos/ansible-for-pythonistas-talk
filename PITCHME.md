@@ -328,8 +328,7 @@ $ ansible-galaxy install username.rolename
  - Filtering
  - Lookup
  - Connection
- - Action
- - *much more...*
+  - *much more...*
 
 ---
 
